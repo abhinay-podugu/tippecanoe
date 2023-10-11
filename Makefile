@@ -7,7 +7,7 @@ SHELL = /bin/bash
 CC := $(CC)
 CXX := $(CXX)
 CFLAGS := $(CFLAGS)
-CXXFLAGS := $(CXXFLAGS) -std=c++11
+CXXFLAGS := $(CXXFLAGS) -std=c++11 -U__STRICT_ANSI__
 LDFLAGS := $(LDFLAGS)
 WARNING_FLAGS := -Wall -Wshadow -Wsign-compare -Wextra -Wunreachable-code -Wuninitialized -Wshadow
 RELEASE_FLAGS := -O3 -DNDEBUG
