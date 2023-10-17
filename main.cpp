@@ -2472,7 +2472,7 @@ int main(int argc, char **argv) {
 	double droprate = 2.5;
 	double gamma = 0;
 	int buffer = 5;
-	const char *tmpdir = "/tmp";
+	const char *tmpdir = "C:/tmp";
 	const char *attribution = NULL;
 	std::vector<source> sources;
 	const char *prefilter = NULL;
