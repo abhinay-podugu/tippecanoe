@@ -159,11 +159,11 @@ void init_cpus() {
 	if (TIPPECANOE_MAX_THREADS != NULL) {
 		CPUS = atoi_require(TIPPECANOE_MAX_THREADS, "TIPPECANOE_MAX_THREADS");
 	} else {
-		CPUS = sysconf(_SC_NPROCESSORS_ONLN);
+		CPUS = 84;
 	}
 
 	if (CPUS < 1) {
-		CPUS = 1;
+		CPUS = 4;
 	}
 
 	// Guard against short struct index.segment

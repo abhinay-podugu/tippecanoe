@@ -864,14 +864,14 @@ int main(int argc, char **argv) {
 	int ifmatched = 0;
 	json_object *filter = NULL;
 
-	CPUS = sysconf(_SC_NPROCESSORS_ONLN);
+	CPUS = 84;
 
 	const char *TIPPECANOE_MAX_THREADS = getenv("TIPPECANOE_MAX_THREADS");
 	if (TIPPECANOE_MAX_THREADS != NULL) {
 		CPUS = atoi(TIPPECANOE_MAX_THREADS);
 	}
 	if (CPUS < 1) {
-		CPUS = 1;
+		CPUS = 4;
 	}
 
 	std::vector<std::string> header;
